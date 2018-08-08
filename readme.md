@@ -16,8 +16,10 @@ pip install numpy <br>
 conda install -c conda-forge tensorflow<br>
 pip install keras==2.1.3<br>
 pip install scikitlearn <br>
-pip install scipy image<br>
+pip install scikit-image<br>
 
-pip install flask
+pip install flask<br>
+pip install flask-boostrap<br>
+pip install Flask-Uploads<br>
 
 pip freeze --local > requirements.txt

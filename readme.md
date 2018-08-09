@@ -19,7 +19,7 @@ https://www.microsoft.com/en-us/download/details.aspx?id=54765
 3. Units in hidden layer - 128
 4. Compiler - optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy']
 5. Acc - 89% Loss - 25% (approx 30min/epoch on GPU)
- 
+6. CNN Code Location: deep_learning/ConvolutionalNeuralNetwork.py
 ## WEB APP
 ### Main Page
 <br>

@@ -47,22 +47,26 @@ classifier.add(MaxPooling2D(pool_size = (2,2)))            ## dims 2x2
 
 classifier.add(Dropout(rate = 0.3))
 
-### Step 2c - add additional convolutional layer for better result (from 80% to 90% accuracy)
+
+### Step 2d - add additional convolutional layer for better result (from 80% to 90% accuracy)
 
 classifier.add(Conv2D(128, (3, 3), activation = 'relu'))      ## No input shape as it was already done
 classifier.add(MaxPooling2D(pool_size = (2,2)))            ## dims 2x2
 
 classifier.add(Dropout(rate = 0.4))
 
+
 ### Step 3 - Flattening to one single vector
 
 classifier.add(Flatten())
+
 
 ### Step 4 - Full connection
 
 # Hidden layer - 128 as a experience guess
 
 classifier.add(Dense(activation = 'relu', units = 128))
+
 
 # Output layer - one node
 
@@ -74,8 +78,8 @@ classifier.add(Dense(activation = 'sigmoid', units = 1))  ## softmax for non--bi
 classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
 
 
-
 ############################################################ Fitting the CNN to the images ###########################################
+
 
 ### From https://keras.io/preprocessing/image/   apply some random transformations on image dataset
 ### flow_from_directory method code from webpage
@@ -130,6 +134,7 @@ classifier.save('cat_dog_classifier.h5')
 
 from skimage.io import imread
 from skimage.transform import resize
+import numpy as np
      
 class_labels = {v: k for k, v in training_set.class_indices.items()}
      

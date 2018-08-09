@@ -40,10 +40,10 @@ def classifier():
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
     if request.method == 'POST' and 'photo' in request.files:
-        image_classifier = load_model('my_classifier.h5')
+        image_classifier = load_model('image_classifier.h5')
         class_labels = {0:'Cat', 1:'Dog'}
         img = imread(request.files['photo']) 
-        img = resize(img,(96,96))
+        img = resize(img,(128,128))
         img = np.expand_dims(img,axis=0)
         if(np.max(img)>1):
             img = img/255.0

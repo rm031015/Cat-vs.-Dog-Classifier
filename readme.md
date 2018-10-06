@@ -24,12 +24,12 @@ https://www.microsoft.com/en-us/download/details.aspx?id=54765
 ### Main Page
 <br>
 
-![1](https://user-images.githubusercontent.com/26208598/43894634-a9722d66-9bca-11e8-8ab3-4f558cf0432c.JPG)
+![predict1](https://user-images.githubusercontent.com/26208598/46571284-fa20c200-c969-11e8-8672-97ff251c882c.PNG)
 
 ### Prediction
 <br>
 
-![2](https://user-images.githubusercontent.com/26208598/43894637-aacac56a-9bca-11e8-8320-e8fa9dd9a79d.JPG)
+![predict2](https://user-images.githubusercontent.com/26208598/46571286-fbea8580-c969-11e8-9f53-a1bad88b780c.PNG)
 
 <br>
 ## TOOLS, MODULES & TECHNIQUES

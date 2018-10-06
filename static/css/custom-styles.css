@@ -8,7 +8,6 @@ body {
     margin: 0;
     padding-bottom: 0;
     min-height: 100%;
-    background: #a8b6bf;
 }
 
 html {
@@ -19,15 +18,15 @@ html {
 
 #wrapper {
     width: 100%;
+    
 }
 
 #page-wrapper {
-    background: #a8b6bf;
-    background: linear-gradient(to bottom right, red, yellow);
     position: relative;
     top: 55px;
     -moz-box-shadow: 0 0 10px #757575;
-    background-image: url('../../static/img/background2.jpg');
+    background-image: url('../../static/img/nice.png');
+    background-size: cover
 
 }
 
@@ -51,7 +50,7 @@ html {
 .btn,
 .btn-large {
     color: white;
-    background-color: #6e747a;
+    background-color: #4e79a7;
     border: none;
     width: 160px;
     display: block;
@@ -70,7 +69,7 @@ html {
 .btn:hover,
 .btn:focus {
     background-color: white;
-    color: #9daab2;
+    color: #4e79a7;
 }
 
 
@@ -124,7 +123,7 @@ h6 {
     top: 0px;
     width: 100%;
     z-index: 300;
-    background: #a8b6bf;
+    background: #4e79a7;
     border-bottom: none;
     padding-right: 10px;
     box-shadow: none;
@@ -149,7 +148,7 @@ h6 {
     font-size: 32px;
     font-weight: 700;
     line-height: 30px;
-    background: #a8b6bf;
+    background: #4e79a7;
     border-radius: 15px;
 }
 
@@ -230,7 +229,7 @@ h6 {
 }
 
 .navbar-default .navbar-brand:hover {
-    color: #f7e2c8;
+
     font-size: 30px;
 }
 
@@ -244,7 +243,7 @@ h6 {
 .fa-python,
 .fa-file,
 .material-icons {
-    color:  #f7e2c8;
+
     margin-right: 2px;
 
 }
@@ -254,16 +253,16 @@ h6 {
 ------------------------------------------------------------------------------*/
 
 #main_card {
-    background-color: #9daab2;
 
     vertical-align: middle;
     border-width: 3px;
     padding: 20px;
     box-shadow: none;
+    background-color: transparent;
 }
 
 #main_card p {
-    color: white;
+    color: black;
     font-size: 40px;
     font-weight: bold;
     padding: 17px;
@@ -271,7 +270,7 @@ h6 {
 }
 
 #main_card h1 {
-    color:  White;
+    color:  black;
     font-size: 32px;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -293,6 +292,11 @@ h2 {
     color: white;
     font-size: 14px;
     margin: 5px;
+}
+
+
+#pet {
+    box-shadow: 1px 1px black;
 }
 
 

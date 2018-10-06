@@ -43,6 +43,7 @@ def classifier():
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
     if request.method == 'POST' and 'photo' in request.files:
+        keras.backend.clear_session()                                           ## clear Tensor session to avoid error
         image_classifier = load_model('image_classifier.h5')                    ## load saved model
         class_labels = {0:'Cat', 1:'Dog'}                                       ## prepare labels
         img = imread(request.files['photo'])                                    ## read photo & transform it into array
@@ -75,5 +76,5 @@ def error500(error):
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=False) 
+    app.run(host='0.0.0.0', port=port, debug=True) 
             

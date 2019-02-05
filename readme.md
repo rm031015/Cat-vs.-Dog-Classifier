@@ -10,7 +10,7 @@ Image classifier trained to distinct between cats and dogs images. Convolutional
 Heroku-hosted web application was built with Flask framework. <br>
 
 Kaggle Dataset:<br>
-http://yann.lecun.com/exdb/mnist/
+https://www.kaggle.com/c/dogs-vs-cats/data
 
 ## CONVOLUTIONAL NEURAL NETWORK CHARACTERISTICS
 
